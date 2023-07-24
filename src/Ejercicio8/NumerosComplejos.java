@@ -63,11 +63,7 @@ public class NumerosComplejos {
     }
 
     public static void mostrarMenu() {
-        System.out.println("""
-                           \n1. Sumar 2 numeros complejos 
-                           2. Multiplicar 2 numeros complejos 
-                           3. Comparar 2 numeros complejos (iguales o no) 
-                           4. Multiplicar un numero complejo por un entero""");
+        System.out.println("\n1. Sumar 2 numeros complejos \n2. Multiplicar 2 numeros complejos \n3. Comparar 2 numeros complejos (iguales o no) \n4. Multiplicar un numero complejo por un entero");
     }
 
 }

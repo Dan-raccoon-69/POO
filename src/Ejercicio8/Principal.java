@@ -25,38 +25,42 @@ public class Principal {
         NumerosComplejos complejo1;
 
         switch (opcion) {
-            case 1 -> {
+            case 1: {
                 numReal1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real1: "));
                 numImaginario1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario1: "));
                 numReal2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real2: "));
                 numImaginario2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario2: "));
                 complejo1 = new NumerosComplejos(numReal1, numImaginario1, numReal2, numImaginario2);
                 System.out.println(complejo1.sumar2NumComplejos());
+                break;
             }
-            case 2 -> {
+            case 2: {
                 numReal1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real1: "));
                 numImaginario1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario1: "));
                 numReal2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real2: "));
                 numImaginario2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario2: "));
                 complejo1 = new NumerosComplejos(numReal1, numImaginario1, numReal2, numImaginario2);
                 System.out.println(complejo1.multiplicar2NumComplejos());
+                break;
             }
-            case 3 -> {
+            case 3 : {
                 numReal1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real1: "));
                 numImaginario1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario1: "));
                 numReal2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real2: "));
                 numImaginario2 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario2: "));
                 complejo1 = new NumerosComplejos(numReal1, numImaginario1, numReal2, numImaginario2);
                 System.out.println(complejo1.comparar2NumComplejos());
+                break;
             }
-            case 4 -> {
+            case 4 : {
                 numReal1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Real1: "));
                 numImaginario1 = Integer.parseInt(JOptionPane.showInputDialog("Numero Imaginario1: "));
                 numEntero = Integer.parseInt(JOptionPane.showInputDialog("Numero Entero: "));
                 complejo1 = new NumerosComplejos(numReal1, numImaginario1, numEntero);
                 System.out.println(complejo1.multiplicarComplejoPorEntero());
+                break;
             }
-            default -> System.out.println("Opcion no encontrada");
+            default: System.out.println("Opcion no encontrada");
         }
 
     }

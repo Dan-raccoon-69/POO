@@ -52,22 +52,23 @@ public class Principal {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog("1. Consultar Datos\n2. Ingresar Saldo\n3. Retirar Saldo"
                             + "\n4. Salir\nSelecciona la opcion deseada:"));
                     switch (opcion) {
-                        case 1 ->
+                        case 1 :
                             System.out.println("\nDatos cliente:"
                                     + "\n" + cliente1.mostrarDatosCliente()
                                     + "\nDatos Cuenta:" + cuentas[indice].mostrarDatosCuenta());
-                        case 2 -> {
+                            break;
+                        case 2 :
                             do {
                                 saldoIngresado = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el Saldo: \nMonto minimo: $100"));
                             } while (saldoIngresado <= 99);
                             cuentas[indice].ingresarSaldo(saldoIngresado);
-                        }
-                        case 3 -> {
+                            break;
+                        case 3 : 
                             do {
                                 saldoaRetirar = Double.parseDouble(JOptionPane.showInputDialog("Monto a retirar: "));
                             } while (saldoaRetirar <= 99);
                             cuentas[indice].retirarSaldo(saldoaRetirar);
-                        }
+                            break;
                     }
                 } while (opcion != 4);
             }
